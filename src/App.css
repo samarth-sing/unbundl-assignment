@@ -4,3 +4,126 @@
   display: flex;
   gap: 40px;
 }
+
+.dreamSmilesLeft {
+  width: 50%;
+}
+
+.dreamSmilesLeft h2 {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 120%;
+  color: #181c1c;
+  margin-bottom: 40px;
+}
+
+.dreamSmilesLeft p {
+  font-family: Instrument Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.dreamSmilesRight {
+  width: 50%;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: Instrument Sans;
+}
+
+.productInfo > h5 {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 130%;
+  color: #2f3737;
+}
+
+.productInfo > p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.productInfo > p span:first-child {
+  text-decoration: line-through;
+  line-height: 24px;
+}
+
+.productInfo > p span:nth-child(3) label:first-child,
+.productInfo > p span:nth-child(3) label:last-child {
+  line-height: 32px;
+  vertical-align: middle;
+}
+
+.productInfo > p span:nth-child(3) label:last-child {
+  color: #8f62d4;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0%;
+  margin-left: 8px;
+}
+
+.productInfo > p span:last-child {
+  font-size: 14px;
+  line-height: 20px;
+  color: #768989;
+}
+
+.productInfo > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.productInfo > div > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.productInfo > div img {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.productInfo > div span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #181c1c;
+}
+
+.productImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  font-family: Instrument Sans;
+}
+
+.productImg > img {
+  width: 100%;
+}
+
+.productImg > a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #8f62d4;
+}
