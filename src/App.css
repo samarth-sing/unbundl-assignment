@@ -351,3 +351,105 @@
   line-height: 22px;
   color: #2f3737;
 }
+
+@media (max-width: 1240px) {
+  .WhyWhistle {
+    padding: 48px 50px;
+  }
+
+  .WhyWhistleHeading {
+    margin-bottom: 32px;
+  }
+
+  .WhyWhistleCards {
+    gap: 20px;
+  }
+
+  .WhyWhistleCard > div h5 {
+    font-size: 17px;
+  }
+
+  .WhyWhistleCard > div p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .WhyWhistle {
+    padding: 44px 40px;
+  }
+
+  .WhyWhistleHeading {
+    margin-bottom: 28px;
+  }
+
+  .WhyWhistleCards {
+    gap: 16px;
+  }
+
+  .WhyWhistleCard > div {
+    padding: 12px 14px;
+  }
+
+  .WhyWhistleCard > div h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .WhyWhistleCard > div p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .WhyWhistle {
+    padding: 40px 32px;
+  }
+
+  .WhyWhistleHeading {
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
+
+  .WhyWhistleCards {
+    gap: 14px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+
+  .WhyWhistleCards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .WhyWhistleCard {
+    max-width: 280px;
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .WhyWhistle {
+    padding: 36px 28px;
+  }
+
+  .WhyWhistleHeading {
+    margin-bottom: 20px;
+  }
+
+  .WhyWhistleCard > div {
+    padding: 12px 12px;
+  }
+
+  .WhyWhistleCard > div h5 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .WhyWhistleCard > div p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
