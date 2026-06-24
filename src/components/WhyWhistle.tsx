@@ -1,51 +1,29 @@
-import React from "react";
-import { whyWhistle1 } from "../assets/images";
+import { useEffect, useState } from "react";
+import { images } from "../assets/images";
 
 const WhyWhistle = () => {
+  const [whyWhistle, setWhyWhistle] = useState([]);
+
+  useEffect(() => {
+    fetch("/public/whyWhistleData.json")
+      .then((res) => res.json())
+      .then((data) => setWhyWhistle(data))
+      .catch((err) => console.error(err));
+  }, []);
+
   return (
     <div className="WhyWhistle">
       <h2 className="MainHeading WhyWhistleHeading">Why Whistle?</h2>
       <div className="WhyWhistleCards">
-        <div className="WhyWhistleCard">
-          <img src={whyWhistle1} alt="services image" />
-          <div>
-            <h5>Custom-made & invisible</h5>
-            <p>
-              Tailored for your teeth and smile with a clear, discreet
-              appearance.
-            </p>
+        {whyWhistle.map((data) => (
+          <div key={data.id} className="WhyWhistleCard">
+            <img src={images[data.serviceImg]} alt="services image" />
+            <div>
+              <h5>{data.serviceName}</h5>
+              <p>{data.serviceDetail}</p>
+            </div>
           </div>
-        </div>
-        <div className="WhyWhistleCard">
-          <img src={whyWhistle1} alt="services image" />
-          <div>
-            <h5>Custom-made & invisible</h5>
-            <p>
-              Tailored for your teeth and smile with a clear, discreet
-              appearance.
-            </p>
-          </div>
-        </div>
-        <div className="WhyWhistleCard">
-          <img src={whyWhistle1} alt="services image" />
-          <div>
-            <h5>Custom-made & invisible</h5>
-            <p>
-              Tailored for your teeth and smile with a clear, discreet
-              appearance.
-            </p>
-          </div>
-        </div>
-        <div className="WhyWhistleCard">
-          <img src={whyWhistle1} alt="services image" />
-          <div>
-            <h5>Custom-made & invisible</h5>
-            <p>
-              Tailored for your teeth and smile with a clear, discreet
-              appearance.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

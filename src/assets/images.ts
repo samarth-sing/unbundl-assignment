@@ -16,7 +16,7 @@ import GapsBefore from "./GapsBefore.png";
 import CrookedTeethAfter from "./CrookedTeethAfter.png";
 import CrookedTeethBefore from "./CrookedTeethBefore.png";
 
-export {
+export const images = {
   whistleImg,
   whistleIcon,
   whyWhistle1,

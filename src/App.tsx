@@ -6,11 +6,11 @@ import WhyWhistle from "./components/WhyWhistle";
 
 function App() {
   return (
-    <>
+    <main className="container">
       <DreamSmiles />
       <Results />
       <WhyWhistle />
-    </>
+    </main>
   );
 }
 
