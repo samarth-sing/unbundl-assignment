@@ -1,3 +1,18 @@
+# Unbundl Frontend Developer Assessment
+
+## Data Fetching
+
+This project does not integrate any public or third-party API.
+
+As per the assignment  guidelines — *"If the public API doesn't match the Figma content, create a local JSON file with mock data that fits the design and import it into your component"* — all dynamic content is served from local JSON files placed in the `/public` directory:
+
+File `public/resultData.json` Used in  `Results` component — before/after treatment cards 
+File `public/whyWhistleData.json` Used in `WhyWhistle` component — service feature cards 
+
+Each component fetches its respective file at mount time using the native `fetch` API (e.g. `fetch("/public/resultData.json")`). The data shape was modelled directly from the Figma design.
+
+---
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
