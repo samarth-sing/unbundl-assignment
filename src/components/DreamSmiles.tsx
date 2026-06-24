@@ -1,5 +1,4 @@
-import React from "react";
-import { rightArrow, tickIcon, whistleImg } from "../assets/images";
+import { images } from "../assets/images";
 
 const DreamSmiles = () => {
   return (
@@ -35,19 +34,19 @@ const DreamSmiles = () => {
           </p>
           <div>
             <div>
-              <img src={tickIcon} alt="tick icon" />
+              <img src={images["tickIcon"]} alt="tick icon" />
               <span>Offer valid for a limited time</span>
             </div>
             <div>
-              <img src={tickIcon} alt="tick icon" />
+              <img src={images["tickIcon"]} alt="tick icon" />
               <span>Easy financing options</span>
             </div>
           </div>
         </div>
         <div className="productImg">
-          <img src={whistleImg} alt="whistle product image" />
+          <img src={images["whistleImg"]} alt="whistle product image" />
           <a>
-            Learn more <img src={rightArrow} alt="arrow-icon" />
+            Learn more <img src={images["rightArrow"]} alt="arrow-icon" />
           </a>
         </div>
       </div>
