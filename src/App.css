@@ -31,12 +31,17 @@
 .dreamSmiles {
   background-color: #f0f9ff;
   padding: 100px 200px;
-  display: flex;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "left right"
+    "desc right";
+  column-gap: 40px;
+  row-gap: 40px;
 }
 
 .dreamSmilesLeft {
-  width: 50%;
+  grid-area: left;
 }
 
 .dreamSmilesLeft h2 {
@@ -45,19 +50,27 @@
   font-size: 40px;
   line-height: 120%;
   color: #181c1c;
-  margin-bottom: 40px;
 }
 
-.dreamSmilesLeft p {
+.dreamSmilesDesc {
+  grid-area: desc;
+  align-self: start;
+}
+
+.dreamSmilesDesc p {
   font-family: Instrument Sans;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+
+.dreamSmilesDesc p + p {
   margin-top: 20px;
 }
 
 .dreamSmilesRight {
-  width: 50%;
+  grid-area: right;
+  align-self: stretch;
   background-color: #fff;
   padding: 24px;
   border-radius: 16px;
@@ -156,6 +169,187 @@
   align-items: center;
   gap: 14px;
   color: #8f62d4;
+}
+
+.productImg > a img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1300px) {
+  .productImg a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .dreamSmiles {
+    padding: 80px 120px;
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+
+  .dreamSmilesLeft h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .productImg a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dreamSmiles {
+    padding: 70px 80px;
+    column-gap: 28px;
+    row-gap: 28px;
+  }
+
+  .dreamSmilesLeft h2 {
+    font-size: 32px;
+  }
+
+  .dreamSmilesDesc p {
+    font-size: 15px;
+  }
+
+  .productInfo {
+    gap: 28px;
+  }
+
+  .productInfo > h5 {
+    font-size: 24px;
+  }
+
+  .productInfo > div span {
+    font-size: 13px;
+  }
+
+  .productImg > a {
+    font-size: 13px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dreamSmiles {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 28px;
+    gap: 24px;
+  }
+
+  .dreamSmilesLeft {
+    order: 1;
+  }
+
+  .dreamSmilesRight {
+    order: 2;
+    align-self: auto;
+  }
+
+  .dreamSmilesDesc {
+    order: 3;
+  }
+
+  .dreamSmilesLeft h2 {
+    font-size: 28px;
+  }
+
+  .dreamSmilesDesc p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .productInfo {
+    gap: 20px;
+  }
+
+  .productInfo > h5 {
+    font-size: 22px;
+  }
+
+  .productInfo > p span:nth-child(3) label:last-child {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .dreamSmiles {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .dreamSmilesLeft h2 {
+    font-size: 24px;
+  }
+
+  .dreamSmilesRight {
+    padding: 20px;
+  }
+
+  .productInfo > h5 {
+    font-size: 20px;
+  }
+
+  .productInfo {
+    gap: 16px;
+  }
+
+  .productInfo > p span:nth-child(3) label:last-child {
+    font-size: 18px;
+  }
+
+  .productInfo > div {
+    gap: 6px;
+  }
+
+  .productInfo > div img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .productInfo > div span {
+    font-size: 12px;
+  }
+
+  .productImg > a {
+    font-size: 14px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .dreamSmiles {
+    padding: 32px 16px;
+    gap: 16px;
+  }
+
+  .dreamSmilesLeft h2 {
+    font-size: 22px;
+  }
+
+  .dreamSmilesRight {
+    padding: 16px;
+  }
+
+  .productInfo > h5 {
+    font-size: 18px;
+  }
+
+  .productInfo > p span:nth-child(3) label:last-child {
+    font-size: 16px;
+  }
+
+  .productInfo > div span {
+    font-size: 12px;
+  }
+
+  .dreamSmilesDesc p {
+    font-size: 13px;
+  }
 }
 
 /********** Styling for Results components **********/
