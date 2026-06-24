@@ -1,20 +1,20 @@
-const whistleImg = import("./whistleImg.png");
-const whistleIcon = import("./whistleIcon.png");
-const whyWhistle1 = import("./whyWhistle1.png");
-const whyWhistle2 = import("./whyWhistle2.png");
-const whyWhistle3 = import("./whyWhistle3.png");
-const whyWhistle4 = import("./whyWhistle4.png");
-const tickIcon = import("./tickIcon.png");
-const rightArrow = import("./rightArrow.png");
-const ProtrudingTeethAfter = import("./ProtrudingTeethAfter.png");
-const ProtrudingTeethBefore = import("./ProtrudingTeethBefore.png");
-const phoneIcon = import("./phoneIcon.png");
-const OverbiteAfter = import("./OverbiteAfter.png");
-const OverbiteBefore = import("./OverbiteBefore.png");
-const GapsAfter = import("./GapsAfter.png");
-const GapsBefore = import("./GapsBefore.png");
-const CrookedTeethAfter = import("./CrookedTeethAfter.png");
-const CrookedTeethBefore = import("./CrookedTeethBefore.png");
+import whistleImg from "./whistleImg.png";
+import whistleIcon from "./whistleIcon.png";
+import whyWhistle1 from "./whyWhistle1.png";
+import whyWhistle2 from "./whyWhistle2.png";
+import whyWhistle3 from "./whyWhistle3.png";
+import whyWhistle4 from "./whyWhistle4.png";
+import tickIcon from "./tickIcon.png";
+import rightArrow from "./rightArrow.png";
+import ProtrudingTeethAfter from "./ProtrudingTeethAfter.png";
+import ProtrudingTeethBefore from "./ProtrudingTeethBefore.png";
+import phoneIcon from "./phoneIcon.png";
+import OverbiteAfter from "./OverbiteAfter.png";
+import OverbiteBefore from "./OverbiteBefore.png";
+import GapsAfter from "./GapsAfter.png";
+import GapsBefore from "./GapsBefore.png";
+import CrookedTeethAfter from "./CrookedTeethAfter.png";
+import CrookedTeethBefore from "./CrookedTeethBefore.png";
 
 export {
   whistleImg,
