@@ -1,5 +1,16 @@
 /********** Common Styling **********/
 
+.fetchError {
+  text-align: center;
+  font-family: Instrument Sans;
+  font-size: 15px;
+  color: #c0392b;
+  background-color: #fdecea;
+  border: 1px solid #f5c6c2;
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+
 .MainHeading {
   font-family: Montserrat;
   font-weight: 800;

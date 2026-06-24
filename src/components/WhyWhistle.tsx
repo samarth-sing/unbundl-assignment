@@ -5,14 +5,23 @@ import Loader from "./Loader";
 const WhyWhistle = () => {
   const [whyWhistle, setWhyWhistle] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     setTimeout(() => {
       fetch("/public/whyWhistleData.json")
-        .then((res) => res.json())
-        .then((data) => setWhyWhistle(data))
-        .catch((err) => console.error(err));
-      setLoading(false);
+        .then((res) => {
+          if (!res.ok) throw new Error(`Failed to load data (${res.status})`);
+          return res.json();
+        })
+        .then((data) => {
+          setWhyWhistle(data);
+          setLoading(false);
+        })
+        .catch((err) => {
+          setError(err.message || "Something went wrong. Please try again.");
+          setLoading(false);
+        });
     }, 2000);
   }, []);
 
@@ -21,6 +30,8 @@ const WhyWhistle = () => {
       <h2 className="MainHeading WhyWhistleHeading">Why Whistle?</h2>
       {loading ? (
         <Loader />
+      ) : error ? (
+        <p className="fetchError">{error}</p>
       ) : (
         <div className="WhyWhistleCards">
           {whyWhistle.map((data) => (
