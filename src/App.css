@@ -26,6 +26,114 @@
   }
 }
 
+/********** Styling for NavBar components **********/
+
+@keyframes phoneRing {
+  0%,
+  55%,
+  100% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(-22deg);
+  }
+  15% {
+    transform: rotate(22deg);
+  }
+  25% {
+    transform: rotate(-16deg);
+  }
+  35% {
+    transform: rotate(16deg);
+  }
+  45% {
+    transform: rotate(-8deg);
+  }
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.navBarMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+}
+
+.navLogo img {
+  height: 44px;
+}
+
+.navPhoneBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #8f62d4;
+  border-radius: 50px;
+  height: 48px;
+  width: 48px;
+  padding: 0 10px;
+  gap: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navPhoneBtn.navPhoneExpanded {
+  width: 142px;
+}
+
+.navPhoneIcon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  animation: phoneRing 1.8s ease-in-out infinite;
+}
+
+.navPhoneNumber {
+  color: #fff;
+  font-family: Instrument Sans;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease 0.28s;
+}
+
+.navPhoneExpanded .navPhoneNumber {
+  opacity: 1;
+}
+
+.navAnnouncement {
+  background: linear-gradient(90deg, #cff0c4 0%, #c7e0f2 100%);
+  text-align: center;
+  padding: 8px 0;
+  font-family: Instrument Sans;
+  font-size: 14px;
+  color: #000;
+}
+
+.navStrike {
+  text-decoration: line-through;
+  color: #768989;
+}
+
+@media (max-width: 425px) {
+  .navLogo img {
+    width: 100px;
+    height: 34px;
+  }
+
+  .navAnnouncement {
+    padding: 8px 10px;
+  }
+}
+
 /********** Styling for DreamSmiles components **********/
 
 .dreamSmiles {
@@ -169,6 +277,15 @@
   align-items: center;
   gap: 14px;
   color: #8f62d4;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    gap 0.2s ease;
+}
+
+.productImg > a:hover {
+  transform: scale(1.08);
+  gap: 18px;
 }
 
 .productImg > a img {
