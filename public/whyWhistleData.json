@@ -1,27 +1,25 @@
-
-
 [
   {
     "id": 1,
-    "serviceImg" : "whyWhistle1",
+    "serviceImg": "whyWhistle1",
     "serviceName": "Custom-made & invisible",
     "serviceDetail": "Tailored for your teeth and smile with a clear, discreet appearance."
   },
   {
     "id": 2,
-    "serviceImg" : "whyWhistle2",
+    "serviceImg": "whyWhistle2",
     "serviceName": "Predictable results",
     "serviceDetail": "Advanced 3D modeling and AI-technology for precise planning and predictable results."
   },
   {
     "id": 3,
-    "serviceImg" : "whyWhistle3",
+    "serviceImg": "whyWhistle3",
     "serviceName": "Partnership with Clove Dental",
     "serviceDetail": "Led by highly experienced Orthodontists of Clove Dental and Whistle that have corrected over 2 lakh smiles."
   },
   {
     "id": 4,
-    "serviceImg" : "whyWhistle4",
+    "serviceImg": "whyWhistle4",
     "serviceName": "Unlimited Aligners*",
     "serviceDetail": "Unlimited aligners and doctor consults at no extra cost."
   }

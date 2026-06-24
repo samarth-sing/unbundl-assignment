@@ -5,3 +5,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 1960px;
+  margin: 0 auto;
+}

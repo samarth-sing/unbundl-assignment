@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "afterImg": "GapsAfter",
+    "beforeImg": "GapsBefore",
+    "concern": "Gaps",
+    "treatmentDuration": "8 months"
+  },
+  {
+    "id": 2,
+    "afterImg": "CrookedTeethAfter",
+    "beforeImg": "CrookedTeethBefore",
+    "concern": "Crooked Teeth",
+    "treatmentDuration": "8 months"
+  },
+  {
+    "id": 3,
+    "afterImg": "OverbiteAfter",
+    "beforeImg": "OverbiteBefore",
+    "concern": "Open Bite",
+    "treatmentDuration": "8 months"
+  },
+  {
+    "id": 4,
+    "afterImg": "ProtrudingTeethAfter",
+    "beforeImg": "ProtrudingTeethBefore",
+    "concern": "Protruding Teeth",
+    "treatmentDuration": "8 months"
+  }
+]
