@@ -180,8 +180,14 @@
   align-items: center;
   gap: 5px;
 }
+
+.ResultCardsImg > div > img {
+  width: 100%;
+}
+
 .ResultCardsInfo {
   padding: 0 8px;
+  color: #000;
 }
 
 .ResultCardsInfo > div {
@@ -193,4 +199,49 @@
 
 .ResultCardsInfo > div:last-child {
   padding-bottom: 0;
+}
+
+/********** Styling for WhyWhistle components **********/
+
+.WhyWhistle {
+  padding: 56px 100px;
+}
+
+.WhyWhistleHeading {
+  margin-bottom: 40px;
+}
+
+.WhyWhistleCards {
+  display: flex;
+  gap: 24px;
+  font-family: Instrument Sans;
+}
+
+.WhyWhistleCard {
+  border-radius: 16px;
+  background-color: #f0f9ff;
+}
+
+.WhyWhistleCard img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.WhyWhistleCard > div {
+  padding: 15px 16px;
+}
+
+.WhyWhistleCard > div h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+
+.WhyWhistleCard > div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2f3737;
 }
