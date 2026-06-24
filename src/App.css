@@ -764,3 +764,17 @@
     line-height: 19px;
   }
 }
+
+/********** Styling for Loader components **********/
+
+.Loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Loader h4 {
+  font-family: Instrument Sans;
+  font-size: 16px;
+  color: #8f62d4;
+}
