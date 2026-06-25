@@ -9,7 +9,7 @@ As per the assignment  guidelines — *"If the public API doesn't match the Figm
 File `public/resultData.json` Used in  `Results` component — before/after treatment cards 
 File `public/whyWhistleData.json` Used in `WhyWhistle` component — service feature cards 
 
-Each component fetches its respective file at mount time using the native `fetch` API (e.g. `fetch("/public/resultData.json")`). The data shape was modelled directly from the Figma design.
+Each component fetches its respective file at mount time using the native `fetch` API (e.g. `fetch("/resultData.json")`). The data shape was modelled directly from the Figma design.
 
 ---
 
