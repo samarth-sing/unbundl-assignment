@@ -2,8 +2,17 @@ import { useEffect, useState } from "react";
 import { images } from "../assets/images";
 import Loader from "./Loader";
 
+type ImageKey = keyof typeof images;
+interface Result {
+  id: number;
+  beforeImg: ImageKey;
+  afterImg: ImageKey;
+  concern: string;
+  treatmentDuration: string;
+}
+
 const Results = () => {
-  const [result, setResult] = useState([]);
+  const [result, setResult] = useState<Result[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -11,7 +20,8 @@ const Results = () => {
     setTimeout(() => {
       fetch("/public/resultData.json")
         .then((res) => {
-          if (!res.ok) throw new Error(`Failed to load results (${res.status})`);
+          if (!res.ok)
+            throw new Error(`Failed to load results (${res.status})`);
           return res.json();
         })
         .then((data) => {

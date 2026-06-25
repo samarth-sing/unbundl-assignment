@@ -2,8 +2,16 @@ import { useEffect, useState } from "react";
 import { images } from "../assets/images";
 import Loader from "./Loader";
 
+type ImageKey = keyof typeof images;
+interface whyWhistle {
+  id: number;
+  serviceImg: ImageKey;
+  serviceName: string;
+  serviceDetail: string;
+}
+
 const WhyWhistle = () => {
-  const [whyWhistle, setWhyWhistle] = useState([]);
+  const [whyWhistle, setWhyWhistle] = useState<whyWhistle[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
