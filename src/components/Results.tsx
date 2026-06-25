@@ -18,7 +18,7 @@ const Results = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch("/public/resultData.json")
+      fetch("/resultData.json")
         .then((res) => {
           if (!res.ok)
             throw new Error(`Failed to load results (${res.status})`);

@@ -17,7 +17,7 @@ const WhyWhistle = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch("/public/whyWhistleData.json")
+      fetch("/whyWhistleData.json")
         .then((res) => {
           if (!res.ok) throw new Error(`Failed to load data (${res.status})`);
           return res.json();
